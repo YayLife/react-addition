@@ -3,5 +3,6 @@ python: 3.6
 sudo: required
 addons:
   chrome: stable
+before_install: pip install selenium
 install: true
 script: python tests.py
