@@ -4,7 +4,7 @@ sudo: required
 addons:
   chrome: stable
 before_install:
-  - sudo unzip <(https://chromedriver.storage.googleapis.com/2.43/chromedriver_linux64.zip) -d /usr/local/bin
+  - sudo unzip <(curl -o - https://chromedriver.storage.googleapis.com/2.43/chromedriver_linux64.zip) -d /usr/local/bin
   - pip install selenium
 install: true
 script: python tests.py
