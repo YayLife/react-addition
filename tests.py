@@ -7,11 +7,11 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 
-# chrome_options = webdriver.ChromeOptions()
-# chrome_options.add_argument("headless")
-# driver = webdriver.Chrome(options=chrome_options)
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument("headless")
+driver = webdriver.Chrome(options=chrome_options)
 
-driver = webdriver.Chrome()
+# driver = webdriver.Chrome()
 
 
 def file_uri(filename):
